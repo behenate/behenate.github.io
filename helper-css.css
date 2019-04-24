@@ -8,4 +8,5 @@
   transform: rotate(-45deg) translate(-50%, 0);
   bottom: -25vh;
   left: 50%;
+  opacity: 0;
 }
