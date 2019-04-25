@@ -2,29 +2,32 @@
     position: absolute;
     z-index: 1;
     height: 100vh;
-    top:100vh;
+    top:0vh;
     background-color: white;
 }
 .menu-container{
-    padding: 20px;
+    padding: 30px;
 }
-.menu-container > div{
+.menu-nav{
     float: right;
-    margin-right: 100px;
+    margin-right: 75px;
 }
-.menu-container > div > ul{
+.menu-nav-list{
     display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
 
 }
-.menu-container > div > ul > li{
-    padding: 30px;
+.menu-nav-elem{
+    padding: 3vw;
     padding-top:0; 
     padding-bottom: 0;
     color: black;
 }
-.menu-container > div > ul > li > a{
+.menu-nav-elem a{
     color: black;
+}
+.menu-logo-svg{
+    height: 10vh;
 }
