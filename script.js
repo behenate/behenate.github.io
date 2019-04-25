@@ -3,12 +3,11 @@ anime({
     opacity: 0,
     duration:0,
 })
-disableScroll();
 var landingPageTl = anime.timeline({
     easing: 'easeInOutQuart',
-    duration:1200,
-    autoplay:false
+    duration:1200
 });
+
 landingPageTl
 .add({
     easing: "linear",
@@ -92,5 +91,4 @@ mainInTl
         enableScroll();
     }
 },400)
-mainInTl.pause;
 document.querySelector('#landing-arrow').addEventListener('click', () => mainInTl.play());

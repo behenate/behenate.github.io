@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Courgette');
+body{
+    overflow-y: hidden;
+}
 .landing-container{
     overflow: hidden;
     max-height: 100vh;
