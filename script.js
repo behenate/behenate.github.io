@@ -1,8 +1,12 @@
 anime({
     targets:"#landing-arrow, .landing-title",
     opacity: 0,
-    duration:0
+    duration:0,
+    begin: function(a){
+
+    }
 })
+disableScroll();
 var landingPageTl = anime.timeline({
     easing: 'easeInOutQuart',
     duration:1200,

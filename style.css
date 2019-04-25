@@ -50,3 +50,7 @@
     top:100vh;
     background-color: white;
 }
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  }
