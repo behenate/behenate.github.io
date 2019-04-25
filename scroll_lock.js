@@ -8,3 +8,7 @@ function disableScroll() {
     $('body').addClass('stop-scrolling');
     $('body').bind('touchmove', function(e){e.preventDefault()});
 }
+function enableScroll() {
+    $('body').removeClass('stop-scrolling');
+    $('body').unbind('touchmove');
+}

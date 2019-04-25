@@ -1,0 +1,30 @@
+.main-container{
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    top:0vh;
+    background-color: white;
+}
+.menu-container{
+    padding: 20px;
+}
+.menu-container > div{
+    float: right;
+    margin-right: 100px;
+}
+.menu-container > div > ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+.menu-container > div > ul > li{
+    padding: 30px;
+    padding-top:0; 
+    padding-bottom: 0;
+    color: black;
+}
+.menu-container > div > ul > li > a{
+    color: black;
+}

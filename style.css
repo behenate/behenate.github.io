@@ -43,14 +43,8 @@
     text-align: center;
 }
 
-.main-container{
-    position: absolute;
-    z-index: 1;
-    height: 100vh;
-    top:100vh;
-    background-color: white;
-}
+
 .stop-scrolling {
     height: 100%;
     overflow: hidden;
-  }
+}

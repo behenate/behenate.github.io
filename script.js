@@ -2,16 +2,13 @@ anime({
     targets:"#landing-arrow, .landing-title",
     opacity: 0,
     duration:0,
-    begin: function(a){
-
-    }
 })
 disableScroll();
 var landingPageTl = anime.timeline({
     easing: 'easeInOutQuart',
     duration:1200,
+    autoplay:false
 });
-
 landingPageTl
 .add({
     easing: "linear",
@@ -90,7 +87,10 @@ mainInTl
 .add({
     targets:".background-image",
     top: "-30vh",
-    duration:1800
+    duration:1800,
+    complete:function(a){
+        enableScroll();
+    }
 },400)
 mainInTl.pause;
 document.querySelector('#landing-arrow').addEventListener('click', () => mainInTl.play());
