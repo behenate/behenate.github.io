@@ -1,3 +1,4 @@
+disableScroll();
 anime({
     targets:"#landing-arrow, .landing-title",
     opacity: 0,
