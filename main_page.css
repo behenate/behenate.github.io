@@ -4,7 +4,7 @@
     height: 100vh;
     margin: 0;
     padding: 0;
-    top:100vh;
+    top:0vh;
     background-color: white;
 }
 
@@ -67,6 +67,9 @@
     padding: 0;
     float: right;
 }
+.menu-nav-link{
+    text-decoration: none;
+}
 .menu-nav-link:hover .menu-nav-elem{
     padding-left: 3vw;
     padding-right: 3vw;
@@ -81,6 +84,7 @@
     color: black;
     border-bottom: 2px black solid;
     transition: .7s cubic-bezier(0.19, 1, 0.22, 1);
+
 }
 .home-content{
     display: flex;
@@ -93,7 +97,7 @@
     display: flex;
     width: 100%;
     height: 50%;
-    background-image: url("drill.jpg");
+    background-image: url("drill1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -101,18 +105,21 @@
     align-items: center;
 }
 .drill-img-desc{
-    display: flex;
+    display:flex;
+    flex-direction: column;
     width: 1000px;
     max-width: 90vw;
     height: 50%;
     border-radius: 20px;
     align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, .15);  
-
-
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, .15); 
+    color: white;
 }
-.drill-img-cont::before{
-    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-    filter: blur(10px);
+.drill-img-desc > h1{
+    font-size: 4em;
+    font-weight: 100;
+}
+.drill-img-desc > p{
+    font-size: .8em;
 }
