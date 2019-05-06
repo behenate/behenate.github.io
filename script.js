@@ -1,4 +1,4 @@
-disableScroll();
+
 anime({
     targets:"#landing-arrow, .landing-title",
     opacity: 0,
@@ -93,3 +93,4 @@ mainInTl
     }
 },400)
 document.querySelector('#landing-arrow').addEventListener('click', () => mainInTl.play());
+disableScroll();
