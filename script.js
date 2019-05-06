@@ -91,6 +91,7 @@ mainInTl
     complete:function(a){
         enableScroll();
     }
-},400)
+},400);
+disableScroll();
 document.querySelector('#landing-arrow').addEventListener('click', () => mainInTl.play());
 window.scrollTo(0,-500);
