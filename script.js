@@ -93,4 +93,4 @@ mainInTl
     }
 },400)
 document.querySelector('#landing-arrow').addEventListener('click', () => mainInTl.play());
-disableScroll();
+window.scrollTo(0,-500);

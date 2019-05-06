@@ -4,7 +4,7 @@
     height: 100vh;
     margin: 0;
     padding: 0;
-    top:100vh;
+    top:0vh;
     background-color: white;
 }
 
@@ -155,5 +155,31 @@
 }
 
 .about-container  .jumbotron{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
+}
+.jumbotron > p{
+    text-align: justify;
+}
+.jbw-container{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    width: 400px;
+    padding: 10px 10px 0px 10px;
+    margin: 0px 0px 0px 20px;
+    background-color: rgb(241, 241, 241);
+    border: 2px solid rgb(238, 238, 238);
+    border-radius: 5px;
+}
+.jbw-img{
+    width: 100%;
+    float: right;
+    border-radius: 2px;
+}
+.jbw-container > p{
+    margin: 0;
+    justify-self: center;
+    padding: 15px 0px 15px 0px;
+    text-align: center;
+    font-size: .7em;
 }
