@@ -4,7 +4,7 @@
     height: 100vh;
     margin: 0;
     padding: 0;
-    top:0vh;
+    top:100vh;
     background-color: white;
 }
 
@@ -117,9 +117,22 @@
     color: white;
 }
 .drill-img-desc > h1{
-    font-size: 4em;
-    font-weight: 100;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5em;
+    font-weight: 300;
 }
-.drill-img-desc > p{
+.drill-img-btn{
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    border: 1px white solid;
+    border-radius:6px;
+    padding: 12px;
+}
+.drill-img-btn > p{
+    margin: 0;
     font-size: .8em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
 }
