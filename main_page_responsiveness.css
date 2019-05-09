@@ -1,0 +1,25 @@
+@media (max-width: 768px) {
+    .main-grid{
+        grid-template-areas: 
+        'menu menu menu menu menu menu menu'
+        'main main main main main main main'
+        'about about about about about about about'
+        'footer footer footer footer footer footer footer';
+    }
+    .menu-logo{
+        position: absolute;
+        display: none;
+    }
+    .menu-logo-svg{
+        display: none;
+    }
+    .menu-container{
+        justify-content: center;
+        justify-items: center;
+    }
+    .menu-nav{
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+}

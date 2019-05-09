@@ -20,9 +20,7 @@
     'about about about about about about about'
     'footer footer footer footer footer footer footer';
     grid-template-rows: 75px minmax(40vh, 200px) auto 300px;
-    grid-template-columns: 14.28% 14.28% 14.28% 14.28% 14.28% 14.28% 14.28% 
 }
-
 .menu-container{
     display: flex;
     grid-area: menu;
@@ -38,15 +36,16 @@
 }
 .menu-logo h1{
     font-family: 'Permanent Marker', cursive;
-    margin-left: -20px;
+    margin-left: -50px;
+    font-size: 20px;
 }
 .menu-logo-svg {
     position: relative;
-    left: -10px;
-    top: 10px;
-    width: 140px;
+    left: -30px;
+    top: 7px;
+    width: 150px;
     height: 70px;
-    transform: rotate(-45deg) scale(0.6);
+    transform: rotate(-45deg) scale(0.4);
     fill: none;
     stroke: rgb(20, 20, 20);
     stroke-width: 7px;
@@ -189,4 +188,12 @@
     grid-area: footer;
     background-color: rgb(25, 29, 39);
     color: white;
+}
+.social-img{
+    width: 48px;
+    height: 48px;
+}
+.footer-links{
+    position: relative;
+    background-color: rgb(23, 26, 36);
 }
