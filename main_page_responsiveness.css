@@ -6,4 +6,17 @@
     .menu-logo-svg{
         display: none;
     }
+    .menu-nav-elem{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .navbar-collapse{
+        align-items: flex-start;
+        margin-left: 0;
+    }
+    .navbar-collapse > ul{
+        width:50%;
+        margin-right: auto !important;
+        text-align: center;
+    }
 }
