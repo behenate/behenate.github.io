@@ -94,3 +94,19 @@ mainInTl
 },400);
 document.querySelector('#landing-arrow').addEventListener('click', () => mainInTl.play());
 window.scrollTo(0,-500);
+
+function myFunction() {
+  var x = document.querySelector(".menu-nav");
+  var y = document.querySelector(".menu-container");
+  var z = document.querySelector(".menu-nav-list");
+  if (x.className === "menu-nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "menu-nav";
+  }
+  if(y.className == "menu-container"){
+    y.className = "menu-container responsive"
+  }else
+    y.className = "menu-container"
+    z.className = z.className == "menu-nav-list" ? "menu-nav-list responsive" : "menu-nav-list";
+}

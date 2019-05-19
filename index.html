@@ -8,17 +8,13 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="helper-css.css">
     <link rel="stylesheet" href="main_page.css">
     <link rel="stylesheet" href="main_page_responsiveness.css">
-
 
 </head>
 <body>
@@ -34,31 +30,25 @@
             <div class="col"><div class="arrow-down" id="landing-arrow" style="margin-left:auto; margin-right:auto"></div></div> 
         </div>
     </div>
+    
     <div class="container-fluid main-container">
+            
         <div class="main-grid">
-            <div class="menu-logo">
-                <svg class="menu-logo-svg">
-                    <g
-                    id="g4622"
-                    transform="rotate(139.93875,90.979955,112.09313)">
-                    <path
-                        id="path4582-6"
-                        d="m 18.632196,167.78921 5.006715,-5.41087 c 0,0 14.462938,-7.13285 19.559577,-4.52587 0.915601,0.68379 -0.01348,-16.07239 -15.123701,-28.37446 -18.1236015,21.57289 -32.5439355,39.43115 -33.6666475,41.82557 9.431933,9.02055 10.004433,9.22746 10.004433,9.22746 l 5.24145,-2.83006 c 3.4936505,-5.25108 8.9781735,-9.91177 8.9781735,-9.91177 z m 75.435745,64.15236 c -0.40144,-0.87765 -0.92343,-1.08465 -0.92343,-1.08465 l -8.92538,-3.6014 -4.08021,-1.89172 c -0.75515,-0.16902 -3.84375,-2.61478 -3.84375,-2.61478 -0.5777,-0.48986 -4.159374,-3.37714 -4.159374,-3.37714 -0.627413,-0.47226 -4.702303,-4.65294 -4.702303,-4.65294 L 63.373066,210.42095 45.27672,190.65886 c 0,0 -15.688957,-16.26715 -17.559401,-17.93474 -1.870715,-1.66729 -9.085121,-4.93491 -9.085121,-4.93491 0,0 -0.860536,-1.28635 5.006714,-5.41087 0,0 14.462931,-7.13285 19.559576,-4.52587 0.915601,0.68379 -0.01349,-16.07238 -15.123708,-28.37446 -18.1235935,21.57289 -32.5439185,39.43115 -33.6666435,41.82558 10.82307,10.08025 10.140666,9.35845 10.140666,9.35845 l 5.403426,-2.21079 c 4.0944815,4.33074 4.4703895,4.7578 4.4703895,4.7578 0,0 5.904543,8.03783 17.710277,13.68808 0.06812,0.0655 1.609842,0.30268 14.059628,13.25824 12.449798,12.95556 17.598681,18.23472 20.509161,20.11589 2.910474,1.88118 19.157577,15.93202 19.157577,15.93202 0,0 1.39104,1.0755 1.59537,1.272 1.70287,-0.0667 2.49798,-0.41641 2.49798,-0.41641 l 3.77532,-3.44872 c 0,0 0.85151,-0.88541 0.76247,-2.01982 -0.089,-1.13438 0.11702,-6.8357 -0.4225,-9.64873 z"
-                        inkscape:connector-curvature="0" />
-                </svg>
-                <h1>BIG WOOD</h1>  
-            </div>
-            <div class="menu-container">
-                <div class="menu-nav">
-                    <ul class="menu-nav-list">
-                        <a class="menu-nav-link" href="#home" style="text-decoration: none"><li class="menu-nav-elem">Big Wood</li></a>
-                        <a class="menu-nav-link" href="#offer" style="text-decoration: none"><li class="menu-nav-elem">Oferta</li></a>
-                        <a class="menu-nav-link" href="#order" style="text-decoration: none"><li class="menu-nav-elem">Złóż Zamówienie</li></a>
-                        <a class="menu-nav-link" href="#contact" style="text-decoration: none"><li class="menu-nav-elem">Kontakt</li></a>
-                    </ul>
-                </div>
-            </div>
-
+                <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+                        <a class="navbar-brand" href="#">Big Wood</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                            
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto mr-5 d-flex justify-items-end">
+                                    <a class="nav-item menu-nav-link" href="#home" style="text-decoration: none"><li class="menu-nav-elem">Big Wood</li></a>
+                                    <a class="nav-item menu-nav-link" href="#home" style="text-decoration: none"><li class="menu-nav-elem">Big Wood</li></a>
+                                    <a class="nav-item menu-nav-link" href="#home" style="text-decoration: none"><li class="menu-nav-elem">Big Wood</li></a>
+                                    
+                            </ul>
+                        </div>
+                        </nav>
             <div class="home-content">  
                 <div class="drill-img-cont">
                     <div class="drill-img-desc">
@@ -125,6 +115,9 @@
             </footer>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 <script src="jquery-3.4.0.min.js"></script>
 <script src="anime.min.js"></script>
