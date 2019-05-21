@@ -21,11 +21,12 @@
     'footer footer footer footer footer footer footer';
     grid-template-rows: auto minmax(40vh, 200px) auto 300px;
 }
+
 .navbar{
     position: sticky;
     top: 0vh;
     width: 100vw;
-    background-color:rgba(33, 37, 41, 0.774);
+    background-color:rgba(33, 37, 41, 0.965);
 }
 .navbar-collapse{
     justify-content: flex-end;
