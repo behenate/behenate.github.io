@@ -91,7 +91,30 @@ mainInTl
     complete:function(a){
         enableScroll();
     }
-},400);
+},400)
+.add({
+    targets:".background-image",
+    duration:0,
+    complete:function(a){
+        navbarTl.play();
+    }
+},500)
 document.querySelector('#landing-arrow').addEventListener('click', () => mainInTl.play());
-window.scrollTo(0,-500);
 
+/*
+    CONTENT ANIMATION!!!
+    CONTENT ANIMATION!!!
+    CONTENT ANIMATION!!!
+    CONTENT ANIMATION!!!
+*/ 
+
+let navbarTl = anime.timeline({
+    easing: 'easeInOutQuart',
+    autoplay:false
+})
+.add({
+    targets: '#axe-path',
+    strokeDashoffset: [anime.setDashoffset, 0],
+    duration: 3000,
+});
+document.querySelector('.logo').addEventListener('click', () => navbarTl.play());
