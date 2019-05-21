@@ -4,7 +4,7 @@
     height: auto;
     margin: 0;
     padding: 0;
-    top:100vh;
+    top:0vh;
     background-color: white;
 }
 
@@ -12,7 +12,7 @@
     width: 100vw;
     margin: 0;
     padding: 0;
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     grid-template-areas: 
     'navbar navbar navbar navbar navbar navbar navbar'
@@ -27,7 +27,11 @@
     grid-area: navbar;
     background-color: aliceblue;
 }
-
+.navbar-collapse{
+    justify-content: flex-end;
+    justify-items: flex-end;
+    padding-right: 20px;
+}
 
 .menu-nav-link:hover .menu-nav-elem{
     padding-left: 3vw;
@@ -48,6 +52,25 @@
 }
 .menu-nav-responsive-switch{
     display: none;
+}
+.navbar-brand{
+    justify-self: center;
+}
+.logo-cont{
+    left: -40px;
+    position: relative;
+    align-self: center;
+    justify-self: flex-start;
+    height: 20px;
+    transform: scale(0.5) rotate(-45deg);
+    margin-right: -50px;
+}
+.logo{
+    outline: red;
+    fill: none;
+    stroke: white;
+    stroke-width: 4px;
+
 }
 .home-content{
     display: flex;
