@@ -4,7 +4,7 @@
     height: auto;
     margin: 0;
     padding: 0;
-    top:0vh;
+    top:100vh;
     background-color: white;
 }
 
@@ -24,8 +24,8 @@
 .navbar{
     position: sticky;
     top: 0vh;
-    grid-area: navbar;
-    background-color: aliceblue;
+    width: 100vw;
+    background-color:rgba(33, 37, 41, 0.774);
 }
 .navbar-collapse{
     justify-content: flex-end;

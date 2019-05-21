@@ -13,8 +13,8 @@
         justify-content: center;
         width: 100vw;
     }
-    .navbar-nav >a:nth-child(2n + 0){
-        background-color: rgb(47, 53, 59);   
+    .navbar-nav >a:nth-child(2n + 1){
+        background-color:rgba(51, 57, 63, 0.774);
     }
     
     .navbar{
@@ -22,9 +22,9 @@
         min-height: 60px;
         padding: 0;
         max-width: 100vw;
+        background-color:rgba(51, 57, 63, 0.87);
     }
     .navbar-collapse{
-        background-color: rgb(62, 69, 77);
         width: 100%;
     }
     .navbar-collapse > ul{
