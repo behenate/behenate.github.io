@@ -63,7 +63,7 @@
     align-self: center;
     justify-self: flex-start;
     height: 20px;
-    transform: scale(0.5) rotate(-45deg);
+    transform: scale(0.4) rotate(-45deg);
     margin-right: -50px;
 }
 .logo{
