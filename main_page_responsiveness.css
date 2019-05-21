@@ -30,6 +30,10 @@
     .navbar-collapse{
         width: 100%;
     }
+    .navbar-brand{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
     .navbar-collapse > ul{
         width:50%;
         text-align: center;
