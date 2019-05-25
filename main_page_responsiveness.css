@@ -1,16 +1,7 @@
 @media (max-width: 768px) {
-    
-    .navbar-nav:nth-child(){
-        display: flex;
-        justify-self: center;
-        justify-items: center;
-        justify-content: center;
-        min-width: 100vw;
-        background-color: aqua;
-    }
+
     .navbar-nav >a{
         display: flex;
-        justify-content: center;
         width: 100vw;
     }
     .navbar-nav >a:nth-child(2n + 1){
@@ -41,11 +32,12 @@
     .menu-nav-elem{
         margin-top: 10px;
         margin-bottom: 10px;
-        justify-self: center;
         width: 50%;
     }
-    .menu-nav-elem:hover{
-        width: 55%;
+    .menu-nav-link:hover .menu-nav-elem:before{
+        width: 100%;  
+        transform: translate(-50%);
+        transition: .3s
     }
     .logo-cont{
         position: absolute;

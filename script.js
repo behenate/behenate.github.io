@@ -98,7 +98,7 @@ mainInTl
     complete:function(a){
         navbarTl.play();
     }
-},500)
+},600)
 document.querySelector('#landing-arrow').addEventListener('click', () => mainInTl.play());
 
 /*
@@ -107,14 +107,64 @@ document.querySelector('#landing-arrow').addEventListener('click', () => mainInT
     CONTENT ANIMATION!!!
     CONTENT ANIMATION!!!
 */ 
-
 let navbarTl = anime.timeline({
     easing: 'easeInOutQuart',
     autoplay:false
 })
+// .add({
+//     targets: ".navbar",
+//     translateX: ['50%', '0%'],
+//     opacity:[.5,1],
+//     duration: 2000,
+//     easing: 'easeOutExpo',
+// },0)
+.add({
+    targets:".navbar-brand",
+    translateY: ['100%', '0%'],
+    translateX: [(window.innerWidth > 758 ? "-0%" : "-50%"),(window.innerWidth > 758 ? "-0%" : "-50%")],
+    opacity:[0,1],
+    duration: 700,
+    easing: 'easeInOutCirc'
+}, 700)
+.add({
+    targets: ".navbar-toggler",
+    translateY: ['100%', '0%'],
+    opacity:[0,1],
+    duration: 700,
+    easing: 'easeInOutCirc',
+}, 850)
+.add({
+    targets:".menu-nav-elem",
+    translateY:["20px", "0px"],
+    opacity:["0","1"],
+    duration:300,
+    delay: anime.stagger(200)
+}, 1200)
+.add({
+    targets:document.querySelectorAll('.menu-nav-elem', '::before'),
+    width: ['0%', '80%'],
+    easing: 'easeInOutSine',
+    duration:500,
+    translateY:['0px', '0px'],
+    delay: anime.stagger(200)
+}, "-=300")
 .add({
     targets: '#axe-path',
     strokeDashoffset: [anime.setDashoffset, 0],
     duration: 3000,
-});
+}, 500)
 document.querySelector('.logo').addEventListener('click', () => navbarTl.play());
+
+mobileNavbarAnimInTl = anime.timeline({
+    easing: 'easeInOutQuart',
+    autoplay:false
+})
+.add({
+    targets:".menu-nav-elem",
+    translateY:["20px", "0px"],
+    translateX:['-50%', '-50%'],
+    opacity:["0","1"],
+    duration:200,
+    delay: anime.stagger(100)
+}, 0)
+document.querySelector('.navbar-toggler').addEventListener('click', () => mobileNavbarAnimInTl.play());
