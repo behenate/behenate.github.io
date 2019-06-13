@@ -120,8 +120,8 @@ let navbarTl = anime.timeline({
 // },0)
 .add({
     targets:".navbar-brand",
-    translateY: ['100%', '0%'],
-    translateX: [(window.innerWidth > 758 ? "-0%" : "-50%"),(window.innerWidth > 758 ? "-0%" : "-50%")],
+    // translateY: ['100%', '0%'],
+    // translateX: [(window.innerWidth > 758 ? "-0%" : "-50%"),(window.innerWidth > 758 ? "-0%" : "-50%")],
     opacity:[0,1],
     duration: 700,
     easing: 'easeInOutCirc'
@@ -138,7 +138,7 @@ let navbarTl = anime.timeline({
     translateY:["20px", "0px"],
     opacity:["0","1"],
     duration:300,
-    delay: anime.stagger(100)
+    delay: anime.stagger(125)
 }, 1200)
 .add({
     targets:document.querySelectorAll('.menu-nav-elem', '::before'),
@@ -147,7 +147,7 @@ let navbarTl = anime.timeline({
     duration:500,
     translateY:['0px', '0px'],
     delay: anime.stagger(100)
-}, "-=150")
+}, "-=350")
 .add({
     targets: '#axe-path',
     strokeDashoffset: [anime.setDashoffset, 0],
@@ -166,5 +166,12 @@ mobileNavbarAnimInTl = anime.timeline({
     opacity:["0","1"],
     duration:200,
     delay: anime.stagger(100)
-}, 0)
-document.querySelector('.navbar-toggler').addEventListener('click', () => mobileNavbarAnimInTl.play());
+}, 0);
+let navbarTogglerCnt = 0;
+document.querySelector('.navbar-toggler').addEventListener('click', () => {
+    if(navbarTogglerCnt % 2 == 0){
+        mobileNavbarAnimInTl.restart();
+        mobileNavbarAnimInTl.play();
+    }   
+    navbarTogglerCnt++;
+});
