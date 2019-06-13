@@ -138,7 +138,7 @@ let navbarTl = anime.timeline({
     translateY:["20px", "0px"],
     opacity:["0","1"],
     duration:300,
-    delay: anime.stagger(200)
+    delay: anime.stagger(100)
 }, 1200)
 .add({
     targets:document.querySelectorAll('.menu-nav-elem', '::before'),
@@ -146,8 +146,8 @@ let navbarTl = anime.timeline({
     easing: 'easeInOutSine',
     duration:500,
     translateY:['0px', '0px'],
-    delay: anime.stagger(200)
-}, "-=300")
+    delay: anime.stagger(100)
+}, "-=150")
 .add({
     targets: '#axe-path',
     strokeDashoffset: [anime.setDashoffset, 0],
@@ -162,7 +162,7 @@ mobileNavbarAnimInTl = anime.timeline({
 .add({
     targets:".menu-nav-elem",
     translateY:["20px", "0px"],
-    translateX:['-50%', '-50%'],
+    translateX:['0%', '0%'],
     opacity:["0","1"],
     duration:200,
     delay: anime.stagger(100)
