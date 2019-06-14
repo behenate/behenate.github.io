@@ -1,0 +1,91 @@
+.main-container{
+    position: absolute;
+    z-index:1;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    top:0vh;
+    background-color: white;
+}
+
+.main-grid{
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    'navbar navbar navbar navbar navbar navbar navbar'
+    'main main main main main main main';
+    grid-template-rows: 70px auto;
+}
+
+.navbar{
+    position: sticky;
+    top: 0vh;
+    width: 100vw;
+    background-color:rgba(33, 37, 41, 0.965);
+}
+.navbar-collapse{
+    justify-content: flex-end;
+    justify-items: flex-end;
+    padding-right: 20px;
+}
+
+.menu-nav-link:hover .menu-nav-elem:before{
+    transform: rotateY(0deg);
+    content : "";
+    left: 50%;
+    width: 160%;  
+    transform: translate(-50%);
+    transition: .3s
+}
+.menu-nav-elem{
+    position: relative;
+    margin: 0vw 3vw 0vw 3vw;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    white-space: nowrap;
+}
+.menu-nav-elem::before {
+    content: "";
+    position: absolute;
+    left    : 50%;
+    bottom  : 0px;
+    height  : 1px;
+    width   : 130%;  /* or 100px */
+    border-bottom:1px solid white;
+    transform: translate(-50%);
+    transition: .3s
+  }
+.menu-nav-responsive-switch{
+    display: none;
+}
+.navbar-brand{
+    justify-self: center;
+}
+.logo-cont{
+    left: -40px;
+    position: relative;
+    align-self: center;
+    justify-self: flex-start;
+    height: 20px;
+    transform: scale(0.4) rotate(-45deg);
+    margin-right: -50px;
+}
+.logo{
+    outline: red;
+    fill: none;
+    stroke: white;
+    stroke-width: 4px;
+
+}
+.home-content{
+    display: flex;
+    flex-direction: column;
+    grid-area: main;
+    align-items: top;
+    justify-content: flex-start;
+
+}
